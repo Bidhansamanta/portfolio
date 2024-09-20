@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidhan Samanta - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="(http://www.imagehover.io/)">
+
+</head>
+
+<body class="bg-[#0F1626] text-[#F5F5F5] font-sans">
+
+    <!-- Navbar -->
+    <header class="bg-[#AB957A] text-[#0F1626] py-4 shadow-md px-6 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">Bidhan Samanta</h1>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-[#F5F5F5]">About</a>
+                <a href="#projects" class="hover:text-[#F5F5F5]">Projects</a>
+                <a href="#contact" class="hover:text-[#F5F5F5]">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Off-Canvas Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 h-full w-64 bg-[#0F1626] text-[#F5F5F5] transform -translate-x-full transition-transform duration-300">
+            <div class="flex justify-between items-center p-4 bg-[#AB957A]">
+                <h1 class="text-xl font-bold">Menu</h1>
+                <button id="close-btn" class="focus:outline-none">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col p-4 space-y-4">
+                <a href="#about" class="hover:text-[#AB957A]">About</a>
+                <a href="#projects" class="hover:text-[#AB957A]">Projects</a>
+                <a href="#contact" class="hover:text-[#AB957A]">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- hero section here -->
+    <section class="min-h-screen flex items-center" id="hero">
+        <div class="container w-100 mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Left Column: Text with Left Margin -->
+            <div class="mx-10 flex flex-col justify-center space-y-4  slide-in-left">
+                <h1 class="text-5xl font-bold text-[#AB957A]">Hi, I'm <br><span
+                        class="typing-effect text-[#FF7755]">Bidhan Samanta</span></h1>
+                <p class="text-xl text-center">A passionate Software Developer, Web Developer, System Designer, and Software Engineer.</p>
+                <p class="text-lg text-center">I specialize in building exceptional digital experiences and solutions.
+                </p>
+                <a href="#contact"
+                    class="inline-block bg-[#FF533D] text-white px-8 py-4 text-lg rounded-lg hover:bg-[#FF7755] transition duration-300 w-full sm:w-40 mx-auto text-center">
+                    Contact Me
+                </a>
+            </div>
+
+            <!-- Right Column: Image -->
+            <div class="flex justify-center fade-in">
+                <img src="bidhan.jpg.jpg" alt="Bidhan samanta"
+                    class="rounded-full h-64 w-64 object-cover border-4 border-[#AB957A] shadow-lg">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- About Me Section -->
+    <section class="py-16 bg-[#1C2533]" id="about">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-[#AB957A] mb-8">About Me</h2>
+            <p class="text-lg text-center text-[#F5F5F5] max-w-3xl mx-auto mb-8">
+                I'm Bidhan samanta, a dedicated and versatile software engineer with expertise in software development,
+                Web development, system design. I am passionate about building digital
+                solutions and constantly exploring new technologies to enhance user experiences.
+            </p>
+
+            <!-- Social Media Buttons with Icons -->
+            <div class="flex justify-center space-x-10">
+                <a href="https://www.facebook.com/bidhan.samanta.718?mibextid=JRoKGi" target="_blank"
+                    class="text-[#FF533D] text-3xl hover:text-[#F5F5F5] transition duration-300">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/9564154851" target="_blank"
+                    class="text-[#FF533D] text-3xl hover:text-[#F5F5F5] transition duration-300">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/bidhan.samanta.718?igsh=MXhoanlsc2Q0cTl0YQ==" target="_blank"
+                    class="text-[#FF533D] text-3xl hover:text-[#F5F5F5] transition duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bidhan-samanta-a87b6326b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"
+                    class="text-[#FF533D] text-3xl hover:text-[#F5F5F5] transition duration-300">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Bidhansamanta" target="_blank"
+                    class="text-[#FF533D] text-3xl hover:text-[#F5F5F5] transition duration-300">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-16" id="projects">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-[#AB957A] mb-8">Projects</h2>
+
+            <!-- Carousel Wrapper -->
+            <div class="carousel">
+                <!-- Carousel Inner -->
+                <div class="carousel-inner" id="carousel-inner">
+                    <!-- Carousel Item 1 -->
+                    <div class="carousel-item">
+                        <a href="https://bidhansamanta.github.io/Amazon_demo1/"><img src="logo1.png"></a> 
+                    </div>
+
+                    <!-- Carousel Item 2 -->
+                    <div class="carousel-item ">
+                       <a href="https://bidhansamanta.github.io/flipkart/"><img src="123.png"></a> 
+                    </div>
+
+                    <!-- Carousel Item 3 -->
+                    <div class="carousel-item">
+                       <a href="https://bidhansamanta.github.io/messho1/"><img src="456.png" alt="Project 3"></a>
+                    </div>
+
+                    <!-- Carousel Item 3 -->
+                    <div class="carousel-item">
+                        <img src="https://placehold.co/200" alt="Project 3">
+                        <h3>Project Three</h3>
+                        <p>Description of the project and the technologies used. This could include a demo link, GitHub
+                            repo, or any other relevant details.</p>
+                    </div>
+
+                    <!-- Carousel Item 3 -->
+                    <div class="carousel-item">
+                        <img src="https://placehold.co/200" alt="Project 3">
+                        <h3>Project Three</h3>
+                        <p>Description of the project and the technologies used. This could include a demo link, GitHub
+                            repo, or any other relevant details.</p>
+                    </div>
+
+                    <!-- Carousel Item 3 -->
+                    <div class="carousel-item">
+                        <img src="https://placehold.co/200" alt="Project 3">
+                        <h3>Project Three</h3>
+                        <p>Description of the project and the technologies used. This could include a demo link, GitHub
+                            repo, or any other relevant details.</p>
+                    </div>
+
+                    <!-- Carousel Item 3 -->
+                    <div class="carousel-item">
+                        <img src="https://placehold.co/200" alt="Project 3">
+                        <h3>Project Three</h3>
+                        <p>Description of the project and the technologies used. This could include a demo link, GitHub
+                            repo, or any other relevant details.</p>
+                    </div>
+
+                    <!-- Additional Carousel Items -->
+                    <!-- Add more items as needed -->
+                </div>
+
+                <!-- Previous Button -->
+                <button class="carousel-button prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <!-- Next Button -->
+                <button class="carousel-button next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-[#1C2533]" id="contact">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-[#AB957A] mb-8">Contact</h2>
+            <div class="max-w-xl mx-auto">
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-lg">Name</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full p-2 rounded-lg bg-[#1C2533] text-white border border-[#AB957A] focus:ring-2 focus:ring-[#FF533D]">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full p-2 rounded-lg bg-[#1C2533] text-white border border-[#AB957A] focus:ring-2 focus:ring-[#FF533D]">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-lg">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            class="w-full p-2 rounded-lg bg-[#1C2533] text-white border border-[#AB957A] focus:ring-2 focus:ring-[#FF533D]"></textarea>
+                    </div>
+                    
+
+  
+                    <button type="submit"
+                        class="w-full bg-[#FF533D] text-white py-3 rounded-lg hover:bg-[#FF7755] transition duration-300">Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=" py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Bidhan Samanta. All Rights Reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="https://www.linkedin.com/in/bidhan-samanta-a87b6326b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="text-[#FF533D] hover:underline">LinkedIn</a>
+                <a href="https://github.com/Bidhansamanta" class="text-[#FF533D] hover:underline">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('open');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+        });
+
+
+  const carouselInner = document.getElementById('carousel-inner');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  const itemsToShow = 3;
+  const items = document.querySelectorAll('.carousel-item');
+  const totalItems = items.length;
+  const totalGroups = Math.ceil(totalItems / itemsToShow);
+  let currentGroup = 0;
+
+  function showGroup(index) {
+    // Ensure the index is within bounds
+    if (index >= totalGroups) {
+      currentGroup = 0; // Loop back to the first group
+    } else if (index < 0) {
+      currentGroup = totalGroups - 1; // Loop to the last group
+    } else {
+      currentGroup = index;
+    }
+
+    // Move the carousel
+    const offset = -currentGroup * 100 / itemsToShow;
+    carouselInner.style.transform = translateX(${offset}%);
+  }
+
+  // Auto Slide every 5 seconds
+  let autoSlide = setInterval(() => {
+    showGroup(currentGroup + 1);
+  }, 5000);
+
+  // Event listeners for buttons
+  nextBtn.addEventListener('click', () => {
+    clearInterval(autoSlide); // Stop auto slide when manually clicked
+    showGroup(currentGroup + 1);
+  });
+
+  prevBtn.addEventListener('click', () => {
+    clearInterval(autoSlide); // Stop auto slide when manually clicked
+    showGroup(currentGroup - 1);
+  });
+</script>
+
+
+
+</body>
+
+</html>

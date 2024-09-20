@@ -1,0 +1,178 @@
+*{
+    scroll-behavior: smooth;
+  }
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  .typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #0F1626; /* Caret color and thickness */
+    animation: typing 4s steps(30, end) 1s infinite normal, blink 0.75s step-end infinite;
+    width: 0;
+  }
+  
+  @keyframes reset {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  /* typing animation end here*/
+  /* Keyframes for animations */
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation classes */
+  .slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.5s ease-out forwards;
+  }
+  
+  /* courosel here */
+  /* Carousel Styling */
+  /* Carousel Styling */
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 33.333%; /* Show 3 items at a time */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the image horizontally */
+    justify-content:center; /* Centers the image vertically */
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin:10px;
+    border:2px solid rgb(98, 76, 76);
+    border-radius: 10px;
+    margin-bottom: 16px;
+    display: block; /* Ensures the image is treated as a block element */
+  }
+  
+  
+  .carousel-item h3 {
+    font-size: 24px;
+    color: #FF533D;
+  }
+  
+  .carousel-item p {
+    color: #F5F5F5;
+  }
+  
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+  
+  /* Hide buttons on small screens */
+  @media (max-width: 767px) {
+    .carousel-button {
+      display: none;
+    }
+  }
+  
+  
+  
+  /* Off-Canvas Menu */
+  #mobile-menu {
+    width: 75%;
+    max-width: 300px;
+    background-color: #0F1626;
+    color: #F5F5F5;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #mobile-menu.open {
+    transform: translateX(0);
+  }
+  
+  /* Hide menu button on larger screens */
+  @media (min-width: 768px) {
+    #menu-btn {
+      display: none;
+    }
+  }
+  
+  /* Sticky Navbar */
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  
+  #projects{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #about{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
