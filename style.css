@@ -2,7 +2,7 @@
     scroll-behavior: smooth;
   }
   @keyframes typing {
-    from { width: 0; }
+    from { width:0; }
     to { width: 100%; }
   }
   
@@ -16,7 +16,7 @@
     white-space: nowrap;
     border-right: 4px solid #0F1626; /* Caret color and thickness */
     animation: typing 4s steps(30, end) 1s infinite normal, blink 0.75s step-end infinite;
-    width: 0;
+    width:0;
   }
   
   @keyframes reset {
@@ -27,7 +27,7 @@
   /* Keyframes for animations */
   @keyframes slideInLeft {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(100%);
       opacity: 0;
     }
     100% {
@@ -79,7 +79,7 @@
     justify-content:center; /* Centers the image vertically */
   }
   
-  .carousel-item img {
+   .carousel-item img {
     max-width: 100%;
     height: auto;
     margin:10px;
@@ -87,6 +87,32 @@
     border-radius: 10px;
     margin-bottom: 16px;
     display: block; /* Ensures the image is treated as a block element */
+   }
+
+  .carousel-item a{
+    padding: 10px 10px;
+    background: rgba(15, 35, 36, 0.687);
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border-bottom: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition-duration: 1s;
+    transition-property: border-top, border-left, border-bottom, border-right,box-shadow;
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover{
+      background-color: green;
+    border-top: 2px solid blueviolet;
+    border-left: 2px solid blueviolet;
+    border-bottom: 2px solid rgb(238, 103, 238);
+    border-right: 2px solid rgb(238, 103, 238);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px;
+    }
   }
   
   
