@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(28,37,51);
+    color: white;
+}
+
+
+img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    object-fit: cover;
+    margin-top: 5rem;
+    /* margin-bottom: 20px; */
+    border-radius: 50%;
+}
+
+@keyframes name {
+    0% { width: 0;}
+    50% { width: 100%;}
+    100%{width: 0;}
+}
+
+.name {
+    display: inline-block;
+    overflow: hidden;
+    color:red;
+    font-size: 40px;
+    white-space: nowrap;
+    /* border-right: 4px solid #0F1626;  */
+    animation: name 5s steps(50, end) 1s infinite normal, blink 0.5s step-end infinite;
+    width: 0;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+a{
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 0.3s ease;
+    &:hover{
+        color: yellow;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        transform: translateY(-7px);
+    }
+}
+
+
+h2{
+    margin-top: 1.5rem;
+    font-size: 30px;
+    color:rgb(171 149 122);
+}
+
+p{
+    margin-top: 1.5rem;
+    font-size: 20px;
+}
+
+h3{
+    margin-top: 2rem;
+    font-size: 30px;
+    color:rgb(171 149 122)
+}
+
+.course{
+    margin-top: 1rem;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#id1,#id2,#id3,#id4{
+    text-decoration: underline;
+    gap:0.5rem;
+}
+
+#id5,#id6,#id7,#id8,#id9,#id10{
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: all 0.2s;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background:rgb(28,37,51);
+    border: 1px solid white;
+    display: inline-block; 
+    font-size: 25px;
+    &:hover{
+        background-color: yellow;
+        color: black;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        transform: translateY(-7px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    #container {
+        padding: 1rem;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    a {
+        font-size: 1.2rem;
+    }
+
+    .about {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .foot {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    .about {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .foot {
+        font-size: 0.7rem;
+    }
+}
