@@ -43,6 +43,7 @@ img{
 a{
     display: inline-block;
     font-size: 1.8rem;
+    /* margin-top: 50px; */
     padding: 8px;
     color: white;
     text-decoration: none;
