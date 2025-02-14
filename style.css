@@ -42,6 +42,7 @@ img{
     width: 0;
 }
 
+
 @keyframes blink {
     50% { border-color: transparent; }
 }
